@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar-se!</title>
+</head>
+<body>
+    
+    <h4>Registre-se!</h4>
+
+    <form action="/signup" method="post">
+        {% csrf_token %}
+            <label for="username">Usuário: </label>
+            <input type="text" name="username" id="" placeholder="Digite seu nome de usuário: " Required>
+            <br>
+            <label for="fname">Nome: </label>
+            <input type="text" name="fname" id="" placeholder="Digite seu nome: " Required>
+            <br>
+            <label for="lname">Sobrenome: </label>
+            <input type="text" name="lname" id="" placeholder="Digite seu sobrenome: " Required>
+            <br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="" placeholder="Digite seu email: " Required>
+            <br>
+            <label for="pass1">Senha: </label>
+            <input type="password" name="pass1" id="" placeholder="Digite sua senha: " Required>
+            <br>
+            <label for="pass2">Confirme a senha: </label>
+            <input type="password" name="pass2" id="" placeholder="Confirme sua senha: " Required>
+            <br>
+            <button type="submit">Registrar-se</button>
+
+    </form>
+
+</body>
+</html>
