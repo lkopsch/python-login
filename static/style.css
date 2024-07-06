@@ -8,13 +8,16 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #1a1a1a;
 }
 
 .center {
     width: 100%; /* ou qualquer valor que você preferir */
+    height: 200px;
     background-color: lightgray; /* apenas para visualização */
     text-align: center; /* centraliza o texto dentro da div */
     padding: 20px; /* apenas para visualização */
+    border-radius: 20px;
 }
 
 button {
